@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: radial-gradient(circle at top right, #F54F5A, #2b2b2b 55%);
+}
+
+header {
+    background-color: rgba(33, 33, 33, 0.4);
+    padding: 1.5%;
+}
+
+nav {
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+    gap: 7%;
+    align-items: center;
+}
+
+.naveg {
+    margin: 0;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 4px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.naveg:hover {
+    color: #F54F5A;
+}
+
+.naveg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    background-color: #F54F5A;
+    transition: width 0.3s ease;
+}
+
+.naveg:hover::after {
+    width: 40px;
+}
+
+.inicio {
+    height: 100vh;
+    display: flex;
+}
+
+.euSou {
+    width: 40%;
+    margin: 10%;
+}
+
+strong {
+    color: #F54F5A;
+}
+
+h1 {
+    font-size: 350%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #F54F5A;
+    margin: 1%;
+}
+
+h2 {
+    font-size: 250%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin: 1%;
+}
+
+h3 {
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin: 1%;
+}
+
+.botao {
+    border: 1px solid #F54F5A;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius:10px;
+    padding: 2.5% 6%;
+    margin: 4%;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 13%;
+    justify-content: space-between;
+}
+
+.botao:hover {
+    background-color: #F54F5A;
+}
+
+.iconeBaixar {
+    width: 15px;
+    height: 15px;
+}
+
+.minhaFoto {
+    margin: 5% 0 auto 0;
+    width: 27%;
+    height: 58%;
+    padding: 4.5px;
+    border: 3.5px outset #F54F5A;
+}
