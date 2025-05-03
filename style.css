@@ -4,7 +4,12 @@
 }
 
 body {
-    background-image: radial-gradient(circle at top right, #F54F5A, #2b2b2b 33%);
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagens/fundo.gif);
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -10;
 }
 
 body::-webkit-scrollbar {
@@ -12,11 +17,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #751c22;
+    background-color: rgb(45, 87, 124);
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: #F54F5A;
+    background-color: rgba(141, 202, 255);
     border-radius: 20px;
 }
 
@@ -25,15 +30,23 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(33, 33, 33, 0.4);
+    background-color: rgba(33, 33, 33, 0);
     padding: 0.8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 header:hover {
-    background-color:  rgba(33, 33, 33, 0.3);
+    backdrop-filter: blur(5px);
+    transition: backdrop-filter, 0.6s ease;
+}
+
+.logo {
+    margin-left: 1%;
+    width: 40px;
+    height: 40px;
 }
 
 nav {
@@ -58,7 +71,7 @@ nav {
 }
 
 .naveg:hover {
-    color: #F54F5A;
+    color: #86CFFF;
 }
 
 .naveg::after {
@@ -68,7 +81,8 @@ nav {
     left: 0;
     width: 15px;
     height: 3px;
-    background-color: #F54F5A;
+    border-radius: 10px;
+    background-color: rgba(141, 202, 255);
     transition: width 0.3s ease;
 }
 
@@ -87,13 +101,13 @@ nav {
 }
 
 strong {
-    color: #F54F5A;
+    color: #86CFFF;
 }
 
 h1 {
     font-size: 350%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #F54F5A;
+    color: #86CFFF;
     margin: 1%;
 }
 
@@ -112,7 +126,7 @@ h3 {
 }
 
 .inicio_botao {
-    border: 1px solid #F54F5A;
+    border: 1px solid aliceblue;
     background-color: rgba(0, 0, 0, 0);
     border-radius:10px;
     padding: 2.5% 6%;
@@ -131,8 +145,9 @@ h3 {
 }
 
 .inicio_botao:hover {
-    background-color: #F54F5A;
-    box-shadow: 0 0 25px 1px #F54F5A;
+    background-color: rgba(141, 202, 255, 0.4);
+    box-shadow: 0 0 25px 1px rgba(141, 202, 255, 0.6);
+    transition: background-color, 0.5s ease;
 }
 
 .iconeBaixar {
@@ -162,7 +177,17 @@ h3 {
     height: 65%;
     margin:25% 8%;
     border-radius: 5%;
-    box-shadow: 0 0 500px 20px #F54F5A;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+.sobreMim_foto:hover {
+    filter: blur(0);
+    transition: filter, 0.6s ease;
+}
+
+.sobreMim_foto:hover {
+    transition: filter, 0.6s ease;
 }
 
 .sobreMim_direita {
@@ -184,11 +209,13 @@ h3 {
     grid-column: 2;
     grid-row: 2;
     text-align: center;
+    width: 100%;
 }
 
 .sobreMim_tecs > img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    padding: 1%;
 }
 
 #projetos {
@@ -197,8 +224,6 @@ h3 {
     grid-template-columns: auto auto auto;
     grid-template-rows: 15% auto auto;
     text-align: center;
-
-    background-image: radial-gradient(circle at bottom, #F54F5A, #2b2b2b 50%);
 }
 
 .projetos_titulo {
@@ -206,17 +231,18 @@ h3 {
 }
 
 .projetos_blocos {
-    background-color: #373636;
+    background-color: rgba(240, 248, 255, 0);
     border-radius: 10px;
     padding: 3%;
     margin: 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    backdrop-filter: blur(10px);
 }
 
 .projetos_blocos:hover {
-    border: 1px solid #F54F5A;
+    border: 1px solid aliceblue;
 }
 
 .projetos_blocos > div {
@@ -233,7 +259,7 @@ h3 {
 }
 
 .projetos_blocos > div > a {
-    border: 1px solid #F54F5A;
+    border: 1px solid aliceblue;
     border-radius: 10px;
     padding: 2.5% 6%;
     text-decoration: none;
@@ -243,6 +269,7 @@ h3 {
 }
 
 .projetos_blocos > div > a:hover {
-    background-color: #F54F5A;
-    box-shadow: 0 0 25px 1px #F54F5A;
+    background-color: rgba(141, 202, 255, 0.4);
+    box-shadow: 0 0 25px 1px rgba(141, 202, 255, 0.6);
+    transition: background-color, 0.5s ease;
 }
