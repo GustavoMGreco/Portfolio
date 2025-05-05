@@ -59,15 +59,12 @@ nav {
 
 .naveg {
     margin: 0;
-    align-items: center;
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-bottom: 4px;
     position: relative;
-    display: inline-block;
-    overflow: hidden;
 }
 
 .naveg:hover {
@@ -147,7 +144,8 @@ h3 {
 .inicio_botao:hover {
     background-color: rgba(141, 202, 255, 0.4);
     box-shadow: 0 0 25px 1px rgba(141, 202, 255, 0.6);
-    transition: background-color, 0.5s ease;
+    backdrop-filter: blur(2px);
+    transition: 0.5s ease;
 }
 
 .iconeBaixar {
@@ -169,6 +167,7 @@ h3 {
     grid-template-columns: 35% auto;
     grid-template-rows: 64% auto;
     justify-items: center;
+    backdrop-filter: blur(3px);
 }
 
 .sobreMim_foto {
@@ -177,17 +176,13 @@ h3 {
     height: 65%;
     margin:25% 8%;
     border-radius: 5%;
-    filter: blur(5px);
+    filter: blur(3px);
     z-index: 0;
 }
 
 .sobreMim_foto:hover {
     filter: blur(0);
-    transition: filter, 0.6s ease;
-}
-
-.sobreMim_foto:hover {
-    transition: filter, 0.6s ease;
+    transition: 0.6s ease;
 }
 
 .sobreMim_direita {
@@ -220,6 +215,7 @@ h3 {
 
 #projetos {
     height: 100vh;
+    padding-top: 4%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 15% auto auto;
@@ -243,6 +239,9 @@ h3 {
 
 .projetos_blocos:hover {
     border: 1px solid aliceblue;
+    backdrop-filter: blur(0);
+    box-shadow: 0 0 20px 1px rgba(141, 202, 255, 0.6);
+    transition: 0.3s ease;
 }
 
 .projetos_blocos > div {
@@ -271,5 +270,70 @@ h3 {
 .projetos_blocos > div > a:hover {
     background-color: rgba(141, 202, 255, 0.4);
     box-shadow: 0 0 25px 1px rgba(141, 202, 255, 0.6);
-    transition: background-color, 0.5s ease;
+    backdrop-filter: blur(2px);
+    transition: 0.5s ease;
+}
+
+#contato {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#contato > h1 {
+    margin: 0;
+}
+
+#contato > div {
+    width: 30%;
+    margin: 9%;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#contato > div > div > a > img {
+    width: 100px;
+    height: 100px;
+    padding: 2%;   
+    
+}
+
+.contato_img_L:hover {
+    content: url(imagens/iconeLinkedinAzul.png);
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+}
+
+.contato_img_G:hover {
+    content: url(imagens/iconeGithubAzul.png);
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+}
+
+.contato_img_E:hover {
+    content: url(imagens/iconeEmailAzul.png);
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+}
+
+footer {
+    height: 10vh;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    color: aliceblue;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
