@@ -9,7 +9,8 @@ body {
     background-image: url(imagens/fundo.gif);
     background-position: center;
     background-attachment: fixed;
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body::-webkit-scrollbar {
