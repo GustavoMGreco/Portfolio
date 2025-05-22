@@ -12,7 +12,7 @@ body {
 }
    
 body::-webkit-scrollbar {
-    width: 2.5px;
+    width: 4px;
 }
 
 body::-webkit-scrollbar-track {
@@ -21,7 +21,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb{
     background-color: #ff3150;
-    border-radius: 20px;
+   
 }
 
 #cursorCanvas {
@@ -248,6 +248,13 @@ h3 {
 .tecs_img > img {
     width: 140px;
     height: 140px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.tecs_img > img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2px aliceblue);
 }
 
 #projetos {
@@ -283,7 +290,7 @@ h3 {
 .projetos_blocos:hover {
     border: 1px solid #ff3150;
     box-shadow: 0 0 20px 1px #ff3150;
-    transform: scale(1.2);
+    transform: scale(1.15);
     position: relative;
     z-index: 2;
 }
@@ -341,12 +348,18 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    z-index: -1;
+    z-index: 2;
 }
 
 .projetos_tecs > img {
     width: 40px;
     height: 40px;
+    z-index: 2;
+}
+
+.projetos_tecs > img:hover {
+    text-shadow: 0 0 10px aliceblue;
+    transform: scale(1.1);
 }
 
 #contato {
@@ -362,10 +375,12 @@ h3 {
 
 #contato > h1 {
     margin: 0;
+    padding-top: 40px;
 }
 
 #contato > div {
     width: 30%;
+    height: 35%;
     margin: 9%;
     background-color: #171523;
     border-radius: 1px;
@@ -385,35 +400,35 @@ h3 {
 #contato > div > div > a > img {
     width: 100px;
     height: 100px;
-    padding: 2%;   
+    margin: 2px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .contato_img_L:hover {
-    content: url(imagens/iconeLinkedinAzul.png);
+    content: url(imagens/iconeLinkedinVer.png);
     width: 100px;
     height: 100px;
-    margin: 2%;
+    margin: 2px;
     transform: scale(1.1);
-    filter: drop-shadow(0 0 5px #86CFFF);
+    filter: drop-shadow(0 0 3px #fc1f40);
 }
 
 .contato_img_G:hover {
-    content: url(imagens/iconeGithubAzul.png);
+    content: url(imagens/iconeGithubVer.png);
     width: 100px;
     height: 100px;
-    margin: 2%;
+    margin: 2px;
     transform: scale(1.1);
-    filter: drop-shadow(0 0 5px #86CFFF);
+    filter: drop-shadow(0 0 3px #fc1f40);
 }
 
 .contato_img_E:hover {
-    content: url(imagens/iconeEmailAzul.png);
+    content: url(imagens/iconeEmailVer.png);
     width: 100px;
     height: 100px;
-    margin: 2%;
+    margin: 2px;
     transform: scale(1.1);
-    filter: drop-shadow(0 0 5px #86CFFF);
+    filter: drop-shadow(0 0 3px #fc1f40);
 }
 
 footer {
