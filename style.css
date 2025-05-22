@@ -68,7 +68,7 @@ nav {
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
-    font-family: "Audiowide", sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: lighter;
     padding-bottom: 4px;
     position: relative;
@@ -362,9 +362,10 @@ h3 {
 #contato > div {
     width: 30%;
     margin: 9%;
-    backdrop-filter: blur(3px);
-    border-radius: 20px;
+    background-color: #171523;
+    border-radius: 1px;
     padding: 2%;
+    z-index: 2;
 }
 
 #contato a,
