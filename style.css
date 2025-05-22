@@ -173,7 +173,7 @@ h3 {
     border: 1px solid #fc1f40;
     background-color: rgba(0, 0, 0, 0);
     border-radius:1px;
-    padding: 2.5% 8%;
+    padding: 2.5% 6.5%;
     margin: 5% 3%;
     text-decoration: none;
     color: aliceblue;
@@ -181,8 +181,8 @@ h3 {
     font-family: "Orbitron", sans-serif;
     display: flex;
     align-items: center;
-    width: 230px;
-    height: 80px;
+    width: 210px;
+    height: 70px;
     justify-content: space-between;
     transition: 0.2s ease;
     z-index: 2;
@@ -196,16 +196,17 @@ h3 {
 }
 
 .iconeBaixar {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .inicio_foto {
     width: 28%;
     height: 60%;
-    margin: 12% 10% 0 0;
+    margin: 10% 10% 0 0;
+    border-radius: 5px;
+    box-shadow: 0 0 40px #fc1f40;
     z-index: 2;
-    box-shadow: 0 0 20px #fc1f40;
 }
 
 #sobreMim {
