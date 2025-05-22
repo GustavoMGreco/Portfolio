@@ -334,10 +334,12 @@ h3 {
 }
 
 .projetos_tecs {
-    
+    position: relative;
     margin: 0;
     padding: 0;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     z-index: -1;
 }
 
