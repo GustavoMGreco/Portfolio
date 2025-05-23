@@ -76,7 +76,7 @@ nav {
 
 .naveg:hover {
     color: #ff3150;
-    text-shadow: 0 0 15px #ff3150;
+    text-shadow: 0 0 25px #ff3150;
 }
 
 .naveg::after {
@@ -85,7 +85,7 @@ nav {
     bottom: 0;
     left: 50%;
     width: 0;
-    height: 1px;
+    height: 1.2px;
     border-radius: 1px;
     background-color: #ff3150;
     transition: width 0.1s ease, left 0.1s ease;
@@ -93,7 +93,7 @@ nav {
 }
 
 .naveg:hover::after {
-    width: 80%;
+    width: 65%;
 }
 
 .linha {
@@ -210,7 +210,7 @@ h3 {
 }
 
 #sobreMim {
-    height: 100vh;
+    height: 150vh;
     margin: 0 10%;
     padding-top: 90px;
     text-align: center;
@@ -222,6 +222,59 @@ h3 {
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 2%;
+}
+
+.certificacoes {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+}
+
+.certificacoes .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.certificacoes .card {
+  margin-top: 50px;
+  background: #171523;
+  padding: 20px;
+  border-radius: 1px;
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+.certificacoes .card:hover {
+  border: 1px solid #ff3150;
+    box-shadow: 0 0 5px 1px #ff3150;
+    transform: scale(1.03);
+    position: relative;
+    z-index: 2;
+}
+
+.card > p {
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+}
+
+.certificacoes .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ff3150;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: background-color 0.1s ease;
+}
+
+.certificacoes .btn:hover {
+  background-color: #fc1f40;
+    box-shadow: 0 0 25px 1px #fc1f40;
+    transform: scale(1.1);
 }
 
 #Tecnologias {
@@ -258,11 +311,11 @@ h3 {
 }
 
 #projetos {
-    margin: 0 8%;
+    margin: 0 20%;
     height: 100vh;
     padding-top: 90px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);;
+    grid-template-columns: repeat(2, 1fr);;
     grid-template-rows: 15% auto;
     text-align: center;
 }
