@@ -99,12 +99,10 @@ nav {
 .linha {
   border: none;
   height: 1px;
-  margin: 0;
   width: 80%;
   background-color: #ff3150;
   box-shadow: 0 0 5px #ff3150, 0 0 20px #ff3150;
   animation: pulsar 2s infinite ease-in-out;
-  margin: 40px auto;
 }
 
 @keyframes pulsar {
@@ -118,6 +116,7 @@ nav {
 
 #inicio {
     height: 100vh;
+    margin-bottom: 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -211,7 +210,7 @@ h3 {
 
 #sobreMim {
     height: 150vh;
-    margin: 0 10%;
+    margin: 1% 10%;
     padding-top: 90px;
     text-align: center;
 }
@@ -220,7 +219,7 @@ h3 {
     grid-column: 2;
     color: aliceblue;
     font-size: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Ancizar Sans", sans-serif;
     padding: 2%;
 }
 
@@ -256,7 +255,7 @@ h3 {
 
 .card > p {
     color: aliceblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+    font-family: "Ancizar Sans", sans-serif;
 }
 
 .certificacoes .btn {
@@ -279,7 +278,7 @@ h3 {
 
 #Tecnologias {
     height: 100vh;
-    margin: 0 5%;
+    margin: 1%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -311,7 +310,7 @@ h3 {
 }
 
 #projetos {
-    margin: 0 20%;
+    margin: 0 20% 5%;
     height: 100vh;
     padding-top: 90px;
     display: grid;
@@ -326,6 +325,8 @@ h3 {
 }
 
 .projetos_blocos {
+    position: relative;
+    overflow: hidden;
     background-color: #171523;
     border-radius: 1px;
     padding: 3%;
@@ -352,20 +353,21 @@ h3 {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    margin: 2%;
 }
 
 .projetos_blocos > div {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: 5%;
+    margin: 0%;
 }
 
 .projetos_blocos > h2 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-family: "Ancizar Sans", sans-serif;
     color: aliceblue;
 }
 
@@ -386,6 +388,7 @@ h3 {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: 0.1s ease;
+    z-index: 3;
 }
 
 .projetos_blocos > div > a:hover {
@@ -401,18 +404,12 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    z-index: 2;
 }
 
 .projetos_tecs > img {
     width: 40px;
     height: 40px;
-    z-index: 2;
-}
-
-.projetos_tecs > img:hover {
-    text-shadow: 0 0 10px aliceblue;
-    transform: scale(1.1);
+    margin: 15px 0;
 }
 
 #contato {
@@ -496,4 +493,39 @@ footer > p {
     color: aliceblue;
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-hover {
+  position: absolute;
+  margin: 0;
+  padding: 0 4%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgb(30, 29, 41);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-hover > p {
+    font-family: "Ancizar Sans", sans-serif;
+    
+    padding: 0;
+}
+
+.lastP {
+    margin-bottom: 25%;
+}
+
+.card-hover:hover {
+  opacity: 1;
+  z-index: 2;
 }
