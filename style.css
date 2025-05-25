@@ -24,14 +24,6 @@ body::-webkit-scrollbar-thumb{
    
 }
 
-#cursorCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 9999;
-}
-
 #particles-js {
   position: fixed; 
   top: 0;
