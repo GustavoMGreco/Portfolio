@@ -122,7 +122,7 @@ h1 {
   font-weight: 300;
   color: #ff3150;
   position: relative;
-  animation: flicker 4s infinite;
+  animation: piscar 4s infinite;
   text-shadow:
     0 0 5px #ff3150,
     0 0 10px #ff3150,
@@ -130,7 +130,7 @@ h1 {
   margin: 0;
 }
 
-@keyframes flicker {
+@keyframes piscar {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -174,15 +174,14 @@ h3 {
     width: 210px;
     height: 70px;
     justify-content: space-between;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
     z-index: 2;
 }
 
 .inicio_botao:hover {
     background-color: #fc1f40;
     box-shadow: 0 0 25px 1px #fc1f40;
-    backdrop-filter: blur(2px);
-    transform: scale(1.1);
+    backdrop-filter: blur(2px);  
 }
 
 .iconeBaixar {
@@ -232,7 +231,7 @@ h3 {
   background: #171523;
   padding: 20px;
   border-radius: 1px;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
   z-index: 2;
 }
 
@@ -258,13 +257,12 @@ h3 {
   border: 1px solid #ff3150;
   border-radius: 1px;
   text-decoration: none;
-  transition: background-color 0.1s ease;
+  transition: background-color 0.3s ease;
 }
 
 .certificacoes .btn:hover {
   background-color: #fc1f40;
     box-shadow: 0 0 25px 1px #fc1f40;
-    transform: scale(1.1);
 }
 
 #Tecnologias {
@@ -393,14 +391,13 @@ h3 {
     color: aliceblue;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: 0.1s ease;
+    transition: 0.3s ease;
     z-index: 3;
 }
 
 .projetos_blocos > div > a:hover {
     background-color: #fc1f40;
     box-shadow: 0 0 25px 1px #fc1f40;
-    transform: scale(1.1);
 }
 
 .projetos_tecs {
