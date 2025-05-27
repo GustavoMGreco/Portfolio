@@ -199,7 +199,13 @@ h3 {
     margin: 10% 10% 0 0;
     border-radius: 5px;
     box-shadow: 0 0 40px #fc1f40;
+    transition: 0.3s ease;
     z-index: 2;
+}
+
+.inicio_foto:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 80px 5px #fc1f40;
 }
 
 #sobreMim {
@@ -473,6 +479,9 @@ h3 {
     width: 30%;
     height: 35%;
     margin: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #171523;
     border-radius: 1px;
     padding: 2%;
