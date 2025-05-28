@@ -262,6 +262,8 @@ h3 {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 16px;
+  font-family: "Orbitron", sans-serif;
+  font-size: medium;
   background-color: transparent;
   color: white;
   border: 1px solid #ff3150;
@@ -324,26 +326,25 @@ h3 {
 }
 
 #projetos {
-    margin: 0 20% 5%;
-    height: 100vh;
+    margin: 0 7% 5%;
     padding-top: 90px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 15% auto;
     text-align: center;
 }
 
 .projetos_titulo {
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
     position: relative;
 }
 
 .projetos_blocos {
     position: relative;
-    overflow: hidden;
     background-color: #171523;
     border-radius: 1px;
-    padding: 3%;
+    height: 100%;
+    padding: 0 4%;
     margin: 10%;
     display: flex;
     flex-direction: column;
@@ -400,7 +401,8 @@ h3 {
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Orbitron", sans-serif;
+    font-size: medium;
     transition: 0.3s ease;
     z-index: 3;
 }
@@ -457,6 +459,27 @@ h3 {
 .card-hover:hover {
   opacity: 1;
   z-index: 2;
+}
+
+.gamebtn {
+    grid-row: 3;
+    grid-column: 2;
+    border: 1px solid #fc1f40;
+    border-radius: 1px;
+    margin: 20% 25%;
+    padding: 4%;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    font-size: medium;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+.gamebtn:hover {
+    background-color: #fc1f40;
+    box-shadow: 0 0 25px 1px #fc1f40;
 }
 
 #contato {
