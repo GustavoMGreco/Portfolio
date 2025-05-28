@@ -482,6 +482,16 @@ h3 {
     box-shadow: 0 0 25px 1px #fc1f40;
 }
 
+#game_area {
+    margin: 5%;
+    text-align: center;
+}
+
+.game_descricao {
+    margin: 4%;
+    font-size: xx-large;
+}
+
 #contato {
     height: 100vh;
     width: 100%;
