@@ -1,4 +1,4 @@
-# 🎮 Portfólio do Gustavo
+# Portfólio do Gustavo
 
 > Bem-vindo ao meu espaço de dev! Aqui você encontra meus projetos, habilidades e experiências, com uma pegada leve inspirada no universo dos games.
 
@@ -6,13 +6,13 @@
 
 ---
 
-## 📖 Sobre o Site
+## Sobre o Site
 
 Este portfólio mostra meus principais trabalhos e conhecimentos em desenvolvimento web, backend e games. Tudo pensado para ser claro, responsivo e fácil de navegar.
 
 ---
 
-## 🗂️ Projetos Principais
+## Projetos Principais
 
 - **Projeto AVATAR** — Sistema para gestão de atestados e avaliação de equipes ágeis.  
   Desenvolvido para melhorar a comunicação acadêmica e de equipes.
@@ -22,7 +22,7 @@ Este portfólio mostra meus principais trabalhos e conhecimentos em desenvolvime
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - HTML5  
 - CSS3  
