@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -28,12 +28,12 @@ body::-webkit-scrollbar-thumb{
 }
 
 #particles-js {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
 }
 
 header {
@@ -92,12 +92,12 @@ nav {
 }
 
 .linha {
-  border: none;
-  height: 1px;
-  width: 80%;
-  background-color: #ff3150;
-  box-shadow: 0 0 5px #ff3150, 0 0 20px #ff3150;
-  animation: pulsar 2s infinite ease-in-out;
+    border: none;
+    height: 1px;
+    width: 80%;
+    background-color: #ff3150;
+    box-shadow: 0 0 5px #ff3150, 0 0 20px #ff3150;
+    animation: pulsar 2s infinite ease-in-out;
 }
 
 @keyframes pulsar {
@@ -117,35 +117,35 @@ nav {
 }
 
 .inicio_euSou {
-   margin: 17% 0 0 5%;
+    margin: 17% 0 0 5%;
 }
 
 h1 {
-  font-size: 350%;
-  font-family: "Audiowide", sans-serif;
-  font-weight: 300;
-  color: #ff3150;
-  position: relative;
-  animation: piscar 4s infinite;
-  text-shadow:
-    0 0 5px #ff3150,
-    0 0 10px #ff3150,
-    0 0 20px #ff3140;
-  margin: 0;
+    font-size: 350%;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 300;
+    color: #ff3150;
+    position: relative;
+    animation: piscar 4s infinite;
+    text-shadow:
+        0 0 5px #ff3150,
+        0 0 10px #ff3150,
+        0 0 20px #ff3140;
+    margin: 0;
 }
 
 @keyframes piscar {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    opacity: 1;
-    text-shadow:
-      0 0 1px #ff3150,
-      0 0 3px #ff3150,
-      0 0 8px #ff3140;
-  }
-  20%, 22%, 24%, 55% {
-    opacity: 0.4;
-    text-shadow: none;
-  }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow:
+        0 0 1px #ff3150,
+        0 0 3px #ff3150,
+        0 0 8px #ff3140;
+    }
+    20%, 22%, 24%, 55% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
 }
 
 h2 {
@@ -209,7 +209,7 @@ h3 {
 }
 
 #sobreMim {
-    height: 120vh;
+    height: 145vh;
     margin: 1% 10%;
     padding-top: 90px;
     text-align: center;
@@ -224,29 +224,29 @@ h3 {
 }
 
 .certificacoes {
-  position: relative;
-  padding: 40px;
-  text-align: center;
+    position: relative;
+    padding: 40px;
+    text-align: center;
 }
 
 .certificacoes .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.certificacoes .card {
-  margin-top: 50px;
-  background: #171523;
-  padding: 20px;
-  border-radius: 1px;
-  transition: transform 0.3s ease;
-  z-index: 2;
+.card {
+    margin-top: 30px;
+    background: #171523;
+    padding: 20px;
+    border-radius: 1px;
+    transition: transform 0.3s ease;
+    z-index: 2;
 }
 
-.certificacoes .card:hover {
-  border: 1px solid #ff3150;
+.card:hover {
+    border: 1px solid #ff3150;
     box-shadow: 0 0 5px 1px #ff3150;
     transform: scale(1.03);
     position: relative;
@@ -258,22 +258,46 @@ h3 {
     font-family: "Ancizar Sans", sans-serif;
 }
 
+.card_center {
+    grid-column: 1 / -1;      
+    justify-self: center;     
+    width: 50%;
+    background: #171523;
+    padding: 20px;
+    border-radius: 1px;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.card_center:hover {
+    border: 1px solid #ff3150;
+    box-shadow: 0 0 5px 1px #ff3150;
+    transform: scale(1.03);
+    position: relative;
+    z-index: 2;
+}
+
+.card_center > p {
+    color: aliceblue;
+    font-family: "Ancizar Sans", sans-serif;
+}
+
 .certificacoes .btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 16px;
-  font-family: "Orbitron", sans-serif;
-  font-size: medium;
-  background-color: transparent;
-  color: white;
-  border: 1px solid #ff3150;
-  border-radius: 1px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    font-family: "Orbitron", sans-serif;
+    font-size: medium;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ff3150;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .certificacoes .btn:hover {
-  background-color: #fc1f40;
+    background-color: #fc1f40;
     box-shadow: 0 0 25px 1px #fc1f40;
 }
 
@@ -428,23 +452,23 @@ h3 {
 }
 
 .card-hover {
-  position: absolute;
-  margin: 0;
-  padding: 0 4%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background-color: rgb(30, 29, 41);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    position: absolute;
+    margin: 0;
+    padding: 0 4%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(30, 29, 41);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .card-hover > p {
@@ -457,8 +481,8 @@ h3 {
 }
 
 .card-hover:hover {
-  opacity: 1;
-  z-index: 2;
+    opacity: 1;
+    z-index: 2;
 }
 
 .gamebtn {
