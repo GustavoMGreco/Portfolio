@@ -4,15 +4,23 @@
 
 html {
     user-select: none;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
+    min-height: 100vh;
     background-color: #201f2f;
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23FC1F40" stroke-width="0.5" stroke-linejoin="round" d="M18 14.88 8.16 3.15c-.26-.31-.76-.12-.76.28v15.31c0 .36.42.56.7.33l3.1-2.6 1.55 4.25c.08.22.33.34.55.26l1.61-.59a.43.43 0 0 0 .26-.55l-1.55-4.25h4.05c.36 0 .56-.42.33-.7Z"></path></svg>'), auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
    
 body::-webkit-scrollbar {
@@ -26,6 +34,51 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb{
     background-color: #ff3150;
 }
+
+main > section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+
+.menu-hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 4px 0;
+    background: #ff3150;
+    border-radius: 2px;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.menu-hamburger.open span:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+}
+
+.menu-hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburger.open span:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
 
 #particles-js {
     position: fixed; 
@@ -111,13 +164,19 @@ nav {
 
 #inicio {
     height: 100vh;
-    margin-bottom: 10%;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
+    align-items: initial;
+    gap: initial;
+    z-index: 2;
+    position: relative;
 }
 
 .inicio_euSou {
-    margin: 17% 0 0 5%;
+    margin: 11.5% 0 0 5%;
+    display: block;
+    text-align: initial;
 }
 
 h1 {
@@ -179,7 +238,7 @@ h3 {
     height: 70px;
     justify-content: space-between;
     transition: 0.3s ease;
-    z-index: 2;
+    z-index: 3;
 }
 
 .inicio_botao:hover {
@@ -196,11 +255,11 @@ h3 {
 .inicio_foto {
     width: 28%;
     height: 60%;
-    margin: 10% 10% 0 0;
+    margin: 4.6% 10% 0 0;
     border-radius: 5px;
     box-shadow: 0 0 40px #fc1f40;
     transition: 0.3s ease;
-    z-index: 2;
+    z-index: 3;
 }
 
 .inicio_foto:hover {
@@ -209,10 +268,12 @@ h3 {
 }
 
 #sobreMim {
-    height: 145vh;
+    height: auto;
     margin: 1% 10%;
+    max-width: none;
     padding-top: 90px;
     text-align: center;
+    display: block;
 }
 
 .sobreMim_texto {
@@ -227,6 +288,8 @@ h3 {
     position: relative;
     padding: 40px;
     text-align: center;
+    margin: initial;
+    max-width: none;
 }
 
 .certificacoes .grid {
@@ -234,6 +297,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 30px;
+    justify-items: initial;
 }
 
 .card {
@@ -302,13 +366,18 @@ h3 {
 }
 
 #Tecnologias {
-    height: 100vh;
+    height: auto;
     margin: 1%;
+    max-width: none;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+
+.tecs_titulo {
+    margin: 70px;
 }
 
 .tecs_grupo {
@@ -351,11 +420,13 @@ h3 {
 
 #projetos {
     margin: 0 7% 5%;
+    max-width: none;
     padding-top: 90px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 15% auto;
     text-align: center;
+    justify-items: initial;
 }
 
 .projetos_titulo {
@@ -375,9 +446,10 @@ h3 {
     align-items: center;
     justify-content: center;
     gap: 2.5%;
-    position: relative;
     transition: 0.3s ease;
     z-index: 2;
+    width: auto;
+    max-width: none;
 }
 
 .projetos_blocos:hover {
@@ -490,7 +562,7 @@ h3 {
     grid-column: 2;
     border: 1px solid #fc1f40;
     border-radius: 1px;
-    margin: 25% 25% 20%;
+    margin: 20% 25%;
     padding: 4%;
     text-decoration: none;
     color: aliceblue;
@@ -499,6 +571,7 @@ h3 {
     font-size: medium;
     transition: 0.3s ease;
     z-index: 2;
+    position: relative;
 }
 
 .gamebtn:hover {
@@ -517,19 +590,19 @@ h3 {
 }
 
 #contato {
-    height: 100vh;
+    min-height: 60vh;
     width: 100%;
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 0;
+    max-width: none;
 }
 
 #contato > h1 {
-    margin: 0;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 #contato > div {
@@ -543,6 +616,7 @@ h3 {
     border-radius: 1px;
     padding: 2%;
     z-index: 2;
+    align-items: initial;
 }
 
 #contato a,
@@ -600,4 +674,273 @@ footer > p {
     color: aliceblue;
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 140%;
+    }
+
+    h3 {
+        font-size: 110%;
+    }
+
+    .inicio_botao {
+        width: auto;
+        max-width: 90vw;
+        min-width: 120px;
+        height: 50px;
+        font-size: 16px;
+        padding: 2% 8%;
+        margin: 8% 0 0 0;
+        white-space: nowrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .iconeBaixar {
+        width: 16px;
+        height: 16px;
+    }
+
+    .inicio_foto {
+        width: 80vw;
+        height: auto;
+        margin: 8% 0 0 0;
+    }
+
+    .sobreMim_texto {
+        font-size: 16px;
+        padding: 4% 2%;
+    }
+
+    .card, .card_center {
+        padding: 10px;
+    }
+
+    .tecs_img > img {
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+    }
+
+    .projetos_blocos > img {
+        width: 90vw;
+        height: auto;
+        max-width: 220px;
+        max-height: 120px;
+    }
+
+    .projetos_blocos > h2 {
+        font-size: 18px;
+    }
+
+    .projetos_blocos > p {
+        font-size: 12px;
+    }
+
+    .projetos_blocos > div > a {
+        font-size: 14px;
+        padding: 2% 4%;
+    }
+
+    .projetos_tecs > img {
+        width: 28px;
+        height: 28px;
+        margin: 8px 0;
+    }
+
+    #contato > div {
+        width: 98%;
+        padding: 4% 1%;
+        max-width: 350px;
+        min-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contato > div > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #contato > div > div > a > img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contato_img_L:hover,
+    .contato_img_G:hover,
+    .contato_img_E:hover {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    footer > p {
+        font-size: 12px;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+    }
+}
+
+@media (max-width: 900px) {
+    #inicio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 20%;
+        gap: 0;
+    }
+
+    .inicio_euSou {
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+      #sobreMim {
+        height: auto;
+        margin: 5% auto;
+        padding-top: 70px;
+        max-width: 98vw;
+    }
+
+    .certificacoes .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card_center {
+        width: 90%;
+    }
+
+    #Tecnologias {
+        height: auto;
+        padding-top: 40px;
+        max-width: 98vw;
+    }
+
+    #projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin: 0 auto 10%;
+        max-width: 98vw;
+    }
+
+    .projetos_blocos {
+        width: 95vw;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .projetos_blocos > img {
+        width: 90vw;
+        height: auto;
+        max-width: 350px;
+        max-height: 200px;
+    }
+
+    #contato {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    #contato > div {
+        width: 80%;
+        margin: 5% auto;
+        align-items: center;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+
+    header {
+        backdrop-filter: none !important;
+        background: none !important;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        max-width: 320px;
+        height: 100vh;
+        background: rgba(17, 15, 30, 0.98);
+        box-shadow: 2px 0 20px #0008;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 30px 30px 30px;
+        gap: 20px;
+        transform: translateX(-100%);
+        transition: transform 0.3s cubic-bezier(.77,0,.18,1);
+        z-index: 9;
+    }
+
+    header nav.nav-open {
+        transform: translateX(0);
+    }
+
+    header nav .naveg {
+        font-size: 22px;
+        padding: 12px 0;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1200px) {
+    .inicio_foto {
+        width: 80vw;
+        max-width: 320px;
+        height: auto;
+        margin: 8% 0 0 0;
+    }
+
+    #projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card_center {
+        width: 70%;
+    }
+
+    #contato > div {
+        width: 50%;
+    }
+
+    .projetos_blocos {
+        width: 95vw;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 32px 6vw;
+        
+    }
 }

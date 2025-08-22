@@ -21,6 +21,11 @@
         </script>
 
         <header>
+            <button class="menu-hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <a class="naveg" href="#">Início</a>
                 <a class="naveg" href="#sobreMim">Sobre mim</a>
@@ -230,6 +235,22 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
+            const btnMenu = document.querySelector('.menu-hamburger');
+            const nav = document.querySelector('header nav');
+            btnMenu.addEventListener('click', function() {
+                nav.classList.toggle('nav-open');
+                btnMenu.classList.toggle('open');
+                btnMenu.setAttribute('aria-expanded', btnMenu.classList.contains('open'));
+            });
+            document.querySelectorAll('nav .naveg').forEach(link => {
+                link.addEventListener('click', () => {
+                    if(window.innerWidth <= 900) {
+                        nav.classList.remove('nav-open');
+                        btnMenu.classList.remove('open');
+                        btnMenu.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
         </script>
 
     </body>
