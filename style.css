@@ -408,7 +408,7 @@ h3 {
 .tecs_img:hover,
 .tecs_img:hover > p {
     opacity: 1;
-    filter: drop-shadow(0 0 2px aliceblue);
+    filter: drop-shadow(0 0 1.5px aliceblue);
     transform: translateY(0);
 }
 
