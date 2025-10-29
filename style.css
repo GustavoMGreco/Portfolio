@@ -108,7 +108,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 45%;
 }
 
 .naveg {
@@ -295,6 +295,13 @@ h3 {
     justify-items: initial;
 }
 
+.certificacoes .grid .card:nth-child(3) {
+    grid-column: 1 / -1;  
+    justify-self: center;  
+    width: 50%;         
+    max-width: 700px;
+}
+
 .card {
     margin-top: 30px;
     background: #171523;
@@ -313,30 +320,6 @@ h3 {
 }
 
 .card > p {
-    color: aliceblue;
-    font-family: "Ancizar Sans", sans-serif;
-}
-
-.card_center {
-    grid-column: 1 / -1;      
-    justify-self: center;     
-    width: 50%;
-    background: #171523;
-    padding: 20px;
-    border-radius: 1px;
-    transition: transform 0.3s ease;
-    z-index: 2;
-}
-
-.card_center:hover {
-    border: 1px solid #ff3150;
-    box-shadow: 0 0 5px 1px #ff3150;
-    transform: scale(1.03);
-    position: relative;
-    z-index: 2;
-}
-
-.card_center > p {
     color: aliceblue;
     font-family: "Ancizar Sans", sans-serif;
 }
@@ -778,7 +761,7 @@ footer > p {
         padding: 4% 2%;
     }
 
-    .card, .card_center {
+    .card {
         padding: 10px;
     }
 
@@ -909,6 +892,13 @@ footer > p {
         margin: 0 12px;
     }
 
+    .certificacoes .grid .card:nth-child(3) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 95%;
+        max-width: 520px;
+    }
+
     #inicio {
         flex-direction: column;
         align-items: center;
@@ -936,10 +926,6 @@ footer > p {
 
     .certificacoes .grid {
         grid-template-columns: 1fr;
-    }
-
-    .card_center {
-        width: 90%;
     }
 
     #Tecnologias {
@@ -1075,10 +1061,6 @@ footer > p {
 
     #api {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card_center {
-        width: 70%;
     }
 
     #contato > div {

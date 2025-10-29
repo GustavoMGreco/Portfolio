@@ -17,7 +17,7 @@ Este portfólio mostra meus principais trabalhos e conhecimentos em desenvolvime
 - **Projeto AVATAR** — Sistema para gestão de atestados e avaliação de equipes ágeis.  
   Desenvolvido para melhorar a comunicação acadêmica e de equipes.
 
-- **Sistema de PDI** — Aplicação Java desktop com bando de dados para otimização e gestão de PDIs.
+- **Sistema de PDI** — Aplicação Java desktop com banco de dados para otimização e gestão de PDIs.
 
 - **Agenda de Contatos** — CRUD completo usando Flask e MySQL.  
   Uma ferramenta prática para organizar seus contatos com eficiência.
