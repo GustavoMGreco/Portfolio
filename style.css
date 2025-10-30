@@ -747,16 +747,17 @@ footer > p {
     }
 
     .tecs_item {
-        width: 50px;
+        width: 90px;
+        padding: 3%;
     }
 
     .tecs_item > i {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .tecs_item > p {
         opacity: 1;
-        font-size: 8px;
+        font-size: 10px;
         transform: none;
         transition: none;
     }
