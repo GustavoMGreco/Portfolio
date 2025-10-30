@@ -416,6 +416,9 @@ h3 {
     grid-column: 1 / 4;
     position: relative;
     margin-bottom: 5%;
+    color: aliceblue;
+    font-size: 25px;
+    font-family: "Ancizar Sans", sans-serif;
 }
 
 .api_blocos {
@@ -739,13 +742,21 @@ footer > p {
         gap: 10px;
     }
 
+    .tecs_titulo {
+        margin: 0 0 12%;
+    }
+
+    .tecs_item {
+        width: 50px;
+    }
+
     .tecs_item > i {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .tecs_item > p {
         opacity: 1;
-        font-size: 12px;
+        font-size: 8px;
         transform: none;
         transition: none;
     }
@@ -785,12 +796,25 @@ footer > p {
         padding: 2% 4%;
     }
 
+    .projetos_blocos:hover {
+        border: 1px solid #ff3150;
+        box-shadow: 0 0 20px 1px #ff3150;
+        transform: scale(1.01);
+        position: relative;
+        z-index: 2;
+    }
+
     .projetos_tecs i {
         font-size: 28px;
         width: 28px;
         height: 28px;
         margin: 8px 0;
         display: inline-block;
+    }
+
+    .api_subtitulo {
+        font-size: 16px;
+        padding: 0% 2%;
     }
 
     .api_blocos > img {
@@ -811,6 +835,14 @@ footer > p {
     .api_blocos > div > a {
         font-size: 14px;
         padding: 2% 4%;
+    }
+
+    .api_blocos:hover {
+        border: 1px solid #ff3150;
+        box-shadow: 0 0 20px 1px #ff3150;
+        transform: scale(1.01);
+        position: relative;
+        z-index: 2;
     }
 
     .api_tecs i {
