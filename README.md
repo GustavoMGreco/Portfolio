@@ -2,7 +2,7 @@
 
 > Bem-vindo ao meu espaço de dev! Aqui você encontra meus projetos, habilidades e experiências, com uma pegada leve inspirada no universo dos games.
 
-🌐 [Acesse meu portfólio](https://portfolio-theta-bice-64.vercel.app)
+🌐 [Acesse meu portfólio](https://gustavomgreco.vercel.app)
 
 ---
 
