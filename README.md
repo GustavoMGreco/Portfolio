@@ -12,15 +12,11 @@ Este portfólio mostra meus principais trabalhos e conhecimentos em desenvolvime
 
 ---
 
-## Projetos Principais
-
-- **Projeto AVATAR** — Sistema para gestão de atestados e avaliação de equipes ágeis.  
-  Desenvolvido para melhorar a comunicação acadêmica e de equipes.
+## Principais Projetos
 
 - **Sistema de PDI** — Aplicação Java desktop com banco de dados para otimização e gestão de PDIs.
 
-- **Agenda de Contatos** — CRUD completo usando Flask e MySQL.  
-  Uma ferramenta prática para organizar seus contatos com eficiência.
+- **Sistema Bancário** — Sistema bancário em Java e SparkJava, com interface em React e banco PostgreSQL.  
 
 ---
 
@@ -28,5 +24,5 @@ Este portfólio mostra meus principais trabalhos e conhecimentos em desenvolvime
 
 - HTML5  
 - CSS3  
-- JavaScript (básico)  
+- JavaScript
 - Vercel (hospedagem)

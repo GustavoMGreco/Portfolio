@@ -1,299 +1,171 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfólio GMG</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark" data-lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio GMG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>particlesJS.load('particles-js', 'particles.json');</script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CSTMVPVWB"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-1CSTMVPVWB');
-        </script>
-    </head>
-    <body>
-
-        <div id="particles-js"></div>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-        <script>
-            particlesJS.load('particles-js', 'particles.json');
-        </script>
-
-        <header>
-            <button class="menu-hamburger" aria-label="Abrir menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header>
+        <button class="menu-hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav>
+            <a class="naveg" href="#" data-i18n="nav.inicio">Início</a>
+            <a class="naveg" href="#Tecnologias" data-i18n="nav.tecs">Tecnologias</a>
+            <a class="naveg" href="#projetos" data-i18n="nav.projetos">Projetos</a>
+            <a class="naveg" href="#sobreMim" data-i18n="nav.sobre">Sobre mim</a>
+            <a class="naveg" href="#contato" data-i18n="nav.contato">Contato</a>
+        </nav>
+        <div class="header-controls">
+            <button class="btn-icon btn-theme" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
             </button>
-            <nav>
-                <a class="naveg" href="#">Início</a>
-                <a class="naveg" href="#sobreMim">Sobre mim</a>
-                <a class="naveg" href="#Tecnologias">Tecnologias</a>
-                <a class="naveg" href="#api">APIs</a>
-                <a class="naveg" href="#projetos">Projetos</a>
-                <a class="naveg" href="#contato">Contato</a>
-            </nav>
-        </header>
+            <button class="btn-icon btn-lang" id="langToggle" aria-label="Change language" title="Change language">
+                <span id="langLabel">EN</span>
+            </button>
+        </div>
+    </header>
 
-        <main>
-            <section id="inicio" data-aos="fade-down" data-aos-duration="1000">
-                <div class="inicio_euSou">
-                    <h3>Olá! Meu nome é</h3>
-                    <h2>Gustavo M. Greco</h2>
-                    <h1>Full-stack Developer</h1>
-                    <a class="inicio_botao" target="_blank" rel="noopener noreferrer" href="Docs/Currículo-GustavoMGreco.pdf">Meu CV
-                        <i class="fa-solid fa-download"></i></a>
+    <main>
+        <section id="inicio" data-aos="fade-down" data-aos-duration="1000">
+            <div class="inicio_euSou">
+                <h3 data-i18n="inicio.ola">Olá! Meu nome é</h3>
+                <h2>Gustavo M. Greco</h2>
+                <h1>Full-stack Developer</h1>
+                <a class="inicio_botao" target="_blank" rel="noopener noreferrer" href="Docs/Currículo-GustavoMGreco.pdf">
+                    <span data-i18n="inicio.cv">Meu CV</span>
+                    <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+            <img class="inicio_foto" src="imagens/minhaFoto.jpg" alt="Foto de Gustavo M. Greco">
+        </section>
+
+        <hr class="linha">
+
+        <section id="Tecnologias" data-aos="fade-down" data-aos-duration="1000">
+            <div class="tecs_titulo">
+                <h1 data-i18n="tecs.titulo">Tecnologias</h1>
+            </div>
+            
+            <div class="tecs_categoria">
+                <h2 data-i18n="tecs.linguagens">Linguagens</h2>
+                <div class="tecs_grupo">
+                    <div class="tecs_item"><i class="devicon-java-plain"></i><p>Java</p></div>
+                    <div class="tecs_item"><i class="devicon-javascript-plain"></i><p>JavaScript</p></div>
+                    <div class="tecs_item"><i class="devicon-typescript-plain"></i><p>TypeScript</p></div>
+                    <div class="tecs_item"><i class="devicon-python-plain"></i><p>Python</p></div>
+                    <div class="tecs_item"><i class="devicon-html5-plain"></i><p>HTML5</p></div>
+                    <div class="tecs_item"><i class="devicon-css3-plain"></i><p>CSS3</p></div>
+                </div>
+            </div>
+
+            <div class="tecs_categoria">
+                <h2 data-i18n="tecs.frameworks">Frameworks / Ferramentas</h2>
+                <div class="tecs_grupo">
+                    <div class="tecs_item"><i class="devicon-bootstrap-plain"></i><p>Bootstrap</p></div>
+                    <div class="tecs_item"><i class="devicon-flask-original"></i><p>Flask</p></div>
+                    <div class="tecs_item"><i class="devicon-nodejs-plain"></i><p>Node.js</p></div>
+                    <div class="tecs_item"><i class="devicon-react-original"></i><p>React</p></div>
+                    <div class="tecs_item"><i class="devicon-maven-plain"></i><p>Maven</p></div>
+                    <div class="tecs_item"><i class="devicon-mysql-plain"></i><p>MySQL</p></div>
+                    <div class="tecs_item"><i class="devicon-postgresql-plain"></i><p>PostgreSQL</p></div>
+                    <div class="tecs_item"><i class="devicon-git-plain"></i><p>Git</p></div>
+                    <div class="tecs_item"><i class="devicon-github-original"></i><p>GitHub</p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="linha">
+
+        <section id="projetos">
+            <h1 class="section-titulo" data-i18n="proj.titulo">Projetos</h1>
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-filter="todos" data-i18n="filter.todos">Todos</button>
+                <button class="filter-btn" data-filter="aplicacoes" data-i18n="filter.apps">Aplicações</button>
+                <button class="filter-btn" data-filter="apis" data-i18n="filter.apis">APIs</button>
+                <button class="filter-btn" data-filter="jogos" data-i18n="filter.jogos">Jogos</button>
+            </div>
+            <p id="projDesc" class="api_subtitulo"></p>
+            <div class="slideshow-wrapper" id="projCarousel"></div>
+        </section>
+
+        <hr class="linha">
+
+        <section id="sobreMim" data-aos="fade-down" data-aos-duration="1000">
+            <div>
+                <h1 data-i18n="sobre.titulo">Sobre Mim</h1>
+                <p class="sobreMim_texto" data-i18n="sobre.texto">
+                    Atualmente curso Análise e Desenvolvimento de Sistemas na FATEC de São José dos Campos,
+                    deixei minha cidade no interior para estudar meus principais interesses: desenvolvimento
+                    full-stack, inteligência artificial e desenvolvimento de jogos. Busco sempre evoluir por
+                    meio de projetos, cursos e colaboração em equipe. Meu objetivo é aplicar o que aprendo
+                    na prática, criando soluções criativas, funcionais e impactantes, como em um bom jogo:
+                    com técnica, emoção e propósito.
+                </p>
+            </div>
+            <div class="certificacoes">
+                <h2 data-i18n="sobre.certs">Certificações e Certificados:</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3 data-i18n="cert1.titulo">Iniciação em Programação - ONE</h3>
+                        <p data-i18n="cert1.inst">Alura • Mar 2025</p>
+                        <a href="Docs/Certificado-Iniciante-ONE.pdf" target="_blank" class="btn" data-i18n="cert.ver">Ver Certificado</a>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="cert2.titulo">Formação em Cibersegurança</h3>
+                        <p data-i18n="cert2.inst">RNP • Out 2024</p>
+                        <a href="Docs/Certificado-Especialização.pdf" target="_blank" class="btn" data-i18n="cert.ver">Ver Certificado</a>
+                    </div>
+                    <div class="card">
+                        <h3>TOEIC - Test of English for International Communication</h3>
+                        <p data-i18n="cert3.nivel"><strong data-i18n="cert3.nivel_label">Nível estimado:</strong> Avançado (CEFR: B2/C1)</p>
+                        <a href="Docs/Certificado-Inglês.pdf" target="_blank" class="btn" data-i18n="cert.ver">Ver Certificado</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="linha">
+
+        <section id="contato" data-aos="fade-down" data-aos-duration="1000">
+            <h1 data-i18n="contato.titulo">Contato</h1>
+            <div>
+                <div>
+                    <a class="contato_link" href="https://linkedin.com/in/gustavomgreco" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="contato_link" href="https://github.com/GustavoMGreco" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="contato_link" href="/cdn-cgi/l/email-protection#325547414653445d5f5d5c46575b405d554057515d72555f535b5e1c515d5f" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
-                <img class="inicio_foto" src="imagens/minhaFoto.jpg" alt="">
-            </section>
+                <h2 data-i18n="contato.fale">Fale comigo!</h2>
+            </div>
+        </section>
+    </main>
 
-            <hr class="linha">
+    <footer>
+        <p>Copyright © 2025 Gustavo Monteiro Greco | <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+    </footer>
 
-            <section id="sobreMim" data-aos="fade-down" data-aos-duration="1000">
-                
-                <div>
-                    <h1>Sobre Mim</h1>
-                    <p class="sobreMim_texto">Atualmente curso Análise e Desenvolvimento de Sistemas na FATEC de São José dos Campos, deixei minha cidade no interior para estudar meus principais interesses: desenvolvimento full-stack, inteligência artificial e desenvolvimento de jogos. Busco sempre evoluir por meio de projetos, cursos e colaboração em equipe. Meu objetivo é aplicar o que aprendo na prática, criando soluções criativas, funcionais e impactantes, como em um bom jogo: com técnica, emoção e propósito.</p>
-                </div>
-                <div class="certificacoes">
-                    <h2>Certificações e Certificados:</h2>
-                    <div class="grid">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 
-                        <div class="card">
-                            <h3>Iniciação em Programação - ONE</h3>
-                            <p>Alura • Mar 2025</p>
-                            <a href="Docs/Certificado-Iniciante-ONE.pdf" target="_blank" class="btn">Ver Certificado</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Formação em Cibersegurança</h3>
-                            <p>RNP • Out 2024</p>
-                            <a href="Docs/Certificado-Especialização.pdf" target="_blank" class="btn">Ver Certificado</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>TOEIC - Test of English for International Communication</h3>
-                            <p><strong>Nível estimado:</strong> Avançado (CEFR: B2/C1)</p>
-                            <a href="Docs/Certificado-Inglês.pdf" target="_blank" class="btn">Ver Certificado</a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <hr class="linha">
-
-            <section id="Tecnologias" data-aos="fade-down" data-aos-duration="1000">
-                <div class="tecs_titulo">
-                    <h1>Tecnologias</h1>
-                </div>
-                <div class="tecs_grupo">
-                    <div class="tecs_item">
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-css3-plain"></i>
-                        <p>CSS3</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-python-plain"></i>
-                        <p>Python</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-java-plain"></i>
-                        <p>Java</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-maven-plain"></i>
-                        <p>Maven</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-bootstrap-plain"></i>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-flask-original"></i> 
-                        <p>Flask</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-mysql-plain"></i>
-                        <p>MySQL</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-git-plain"></i>
-                        <p>Git</p>
-                    </div>
-                    <div class="tecs_item">
-                        <i class="devicon-github-original"></i>
-                        <p>GitHub</p>
-                    </div>
-                </div>
-            </section>
-
-            <hr class="linha">
-
-            <section id="api" data-aos="fade-down" data-aos-duration="1000">
-                <h1 class="api_titulo">APIs</h1>
-                <p class="api_subtitulo">API (Aprendizagem por Projetos Integrados) é uma metodologia focada em 
-                    desenvolver hard e soft skills. Seus diferenciais são o uso de metodoligas ágeis, a resolução de desafios 
-                    reais de empresas parceiras (Real Problem Based Learning) e a validação externa dos projetos pelas próprias organizações.</p>
-                <div class="api_blocos">
-                    <img src="imagens/ImagemAVATAR.png" alt="APIAvatar">
-                    <h2 title="">API - AVATAR</h2>
-                        <div class="api_tecs">
-                            <i class="devicon-html5-plain" title="HTML5"></i>
-                            <i class="devicon-css3-plain" title="CSS3"></i>
-                            <i class="devicon-python-plain" title="Python"></i>
-                            <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-                            <i class="devicon-flask-original" title="Flask"></i>
-                            <i class="devicon-javascript-plain" title="JavaScript"></i>
-                        </div>
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=2vUJxWFI6WU" target="_blank">Vídeo</a>
-                        <a href="https://github.com/NinjaDevs-API/NinjaDevs" target="_blank">Github</a>
-                    </div>
-                    <div class="card-hover">
-                        <h2>Detalhes:</h2>
-                        <p>Sistema web para gestão de atestados e avalição de equipes ágeis.</p>
-                        <hr class="linha">
-                        <p class="lastP"><strong>Desafio:</strong> Implementar autenticação e exportação de documentos sem banco de dados. <br>
-                            <strong>Solução:</strong> Utilizei Flask para as rotas, lógica e JSON como estrutura de dados.</p>
-                    </div>
-                </div>
-                <div class="api_blocos">
-                    <img src="imagens/imagemPDI.png" alt="SistemaPDI">
-                    <h2>API - Sistema de PDI</h2>
-                    <div class="api_tecs">
-                        <i class="devicon-html5-plain" title="HTML5"></i>
-                        <i class="devicon-css3-plain" title="CSS3"></i>
-                        <i class="devicon-java-plain" title="Java"></i>
-                        <i class="devicon-mysql-plain" title="MySQL"></i>
-                    </div>
-                    <div>
-                        <a href="https://youtu.be/meaiycU6ehY" target="_blank">Vídeo</a>
-                        <a href="https://github.com/Galaticos-API/API-2" target="_blank">Github</a>
-                    </div>
-                    <div class="card-hover">
-                        <h2>Detalhes:</h2>
-                        <p>Aplicação Java desktop com banco de dados para otimização e gestão de PDIs.</p>
-                        <hr class="linha">
-                        <p class="lastP"><strong>Desafio:</strong> Garantir o gerenciamento seguro de recursos na interação das classes DAO com o BD. <br>
-                            <strong>Solução:</strong> Implementei a estrutura try-with-resources para assegurar o fechamento automático dos recursos e prevenir vazamentos.</p>
-                    </div>
-                </div>    
-
-            </section>
-
-            <hr class="linha">
-
-            <section id="projetos" data-aos="fade-down" data-aos-duration="1000">
-                <h1 class="projetos_titulo">Projetos</h1>
-                </div>
-                <div class="projetos_blocos">
-                    <img src="imagens/ImagemCRUD.png" alt="AgendadeContatos">
-                    <h2>Agenda de Contatos</h2>
-                    <div class="projetos_tecs">
-                        <i class="devicon-html5-plain" title="HTML5"></i>
-                        <i class="devicon-css3-plain" title="CSS3"></i>
-                        <i class="devicon-python-plain" title="Python"></i>
-                        <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-                        <i class="devicon-flask-original" title="Flask"></i>
-                        <i class="devicon-mysql-plain" title="MySQL"></i>
-                    </div>
-                    <div>
-                        <a href="https://youtu.be/e9jTuC-lV3M" target="_blank">Vídeo</a>
-                        <a href="https://github.com/GustavoMGreco/CRUD-Agenda-de-Contatos" target="_blank">Github</a>
-                    </div>
-                    <div class="card-hover">
-                        <h2>Detalhes:</h2>
-                        <p>Aplicação web com CRUD completo para gerenciamento de contatos.</p>
-                        <hr class="linha">
-                        <p class="lastP"><strong>Desafio:</strong> Integrar backend Flask com banco MySQL e interface responsiva. <br>
-                            <strong>Solução:</strong> Usei Flask para rotas e lógica, MySQL para armazenamento e Bootstrap no frontend.</p>
-                    </div>
-                </div>  
-                <div class="projetos_blocos">
-                    <h2><i>Em Desenvolvimento...</i></h2>
-                    <h2>Sistema Bancário</h2>
-                    <div class="projetos_tecs">
-                    </div>
-                    <div>
-                        <a href="">Vídeo</a>
-                        <a href="https://github.com/GustavoMGreco/Sistema-Bancario" target="_blank">Github</a>
-                    </div>
-                    <div class="card-hover">
-                        <h2>Detalhes:</h2>
-                        <p>Em breve</p>
-                        <hr class="linha">
-                        <p class="lastP"></p>
-                    </div>  
-                </div>    
-
-            </section>
-            
-            
-            <hr class="linha">
-
-            <section id="contato" data-aos="fade-down" data-aos-duration="1000">
-                <h1>Contato</h1>
-                <div>
-                    <div>
-                        <a class="contato_link" href="https://linkedin.com/in/gustavomgreco" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a class="contato_link" href="https://github.com/GustavoMGreco" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a class="contato_link" href="mailto:gustavomonteirogreco@gmail.com" target="_blank">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                    <h2>Fale comigo!</h2>
-                </div>
-            </section>
-
-        </main>
-
-        <footer>
-           <p>Copyright © 2025 Gustavo Monteiro Greco | Todos os direitos reservados.</p>
-        </footer>
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-            const btnMenu = document.querySelector('.menu-hamburger');
-            const nav = document.querySelector('header nav');
-            btnMenu.addEventListener('click', function() {
-                nav.classList.toggle('nav-open');
-                btnMenu.classList.toggle('open');
-                btnMenu.setAttribute('aria-expanded', btnMenu.classList.contains('open'));
-            });
-            document.querySelectorAll('nav .naveg').forEach(link => {
-                link.addEventListener('click', () => {
-                    if(window.innerWidth <= 900) {
-                        nav.classList.remove('nav-open');
-                        btnMenu.classList.remove('open');
-                        btnMenu.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            });
-        </script>
-
-    </body>
-    </html>
+</body>
+</html>
