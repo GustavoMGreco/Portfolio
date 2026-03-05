@@ -92,15 +92,20 @@ const projetosData = [
         categoria: "aplicacoes",
         img: "imagens/imagemBanco.png",
         imgAlt: "SistemaBancario",
-        badge: { pt: "Em Desenvolvimento", en: "In Development" },
         descricao: {
-            pt: "Sistema bancário com funcionalidades de conta, saldo e transferências.",
-            en: "Banking system with account management, balance and transfer features."
+            pt: "Aplicação web bancária completa com foco em integridade transacional e gestão de ativos.",
+            en: "A full-stack banking application focused on transactional integrity and asset management."
         },
-        desafio: { pt: "", en: "" },
-        solucao: { pt: "<strong>Em breve...</strong>", en: "<strong>Coming soon...</strong>" },
-        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-java-plain","devicon-typescript-plain","devicon-react-plain","devicon-postgresql-plain"],
-        links: { github: "https://github.com/GustavoMGreco/Sistema-Bancario" }
+        desafio: {
+            pt: "<strong>Desafio:</strong> Impedir a exposição de dados sensíveis e da estrutura bruta do banco de dados diretamente na camada de rede (API).",
+            en: "<strong>Challenge:</strong> Preventing the exposure of sensitive data and raw database structures directly to the API network layer."
+        },
+        solucao: {
+            pt: "<strong>Solução:</strong> Implementei o padrão DTO para desacoplar as entidades do banco da interface, assim, apenas dados necessários e formatados trafegam via JSON.",
+            en: "<strong>Solution:</strong> Implemented the DTO pattern to decouple database entities from the UI, ensuring only necessary and formatted data is transferred via JSON."
+        },
+        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-java-plain","devicon-typescript-plain","devicon-react-plain", "devicon-tailwindcss-plain","devicon-postgresql-plain"],
+        links: { video: "https://youtu.be/9DyAC5l8tN8", github: "https://github.com/GustavoMGreco/Sistema-Bancario" }
     }
 ];
 
@@ -116,7 +121,7 @@ const translations = {
         "cert1.titulo": "Iniciação em Programação - ONE", "cert1.inst": "Alura • Mar 2025",
         "cert2.titulo": "Formação em Cibersegurança", "cert2.inst": "RNP • Out 2024",
         "cert3.nivel": "Nível estimado: Avançado (CEFR: B2/C1)", "cert3.nivel_label": "Nível estimado:",
-        "cert.ver": "Ver Certificado", "tecs.titulo": "Tecnologias",
+        "cert.ver": "Ver Certificado", "tecs.titulo": "Tecnologias", "tecs.linguagens": "Linguagens", "tecs.frameworks": "Frameworks / Feramentas",
         "api.desc": "API (Aprendizagem por Projetos Integrados) é uma metodologia focada em desenvolver hard e soft skills. Seus diferenciais são o uso de metodologias ágeis, a resolução de desafios reais de empresas parceiras (Real Problem Based Learning) e a validação externa dos projetos pelas próprias organizações.",
         "proj.titulo": "Projetos",
         "filter.todos": "Todos", "filter.apps": "Aplicações", "filter.apis": "APIs", "filter.jogos": "Jogos",
@@ -126,7 +131,7 @@ const translations = {
         "footer.rights": "Todos os direitos reservados."
     },
     en: {
-        "nav.inicio": "Home", "nav.sobre": "About me", "nav.tecs": "Technologies",
+        "nav.inicio": "Home", "nav.sobre": "About me", "nav.tecs": "Technologies", 
         "nav.projetos": "Projects", "nav.contato": "Contact",
         "inicio.ola": "Hi! My name is", "inicio.cv": "My CV",
         "sobre.titulo": "About Me",
@@ -135,7 +140,7 @@ const translations = {
         "cert1.titulo": "Programming Fundamentals - ONE", "cert1.inst": "Alura • Mar 2025",
         "cert2.titulo": "Cybersecurity Training", "cert2.inst": "RNP • Oct 2024",
         "cert3.nivel": "Estimated level: Advanced (CEFR: B2/C1)", "cert3.nivel_label": "Estimated level:",
-        "cert.ver": "View Certificate", "tecs.titulo": "Technologies",
+        "cert.ver": "View Certificate", "tecs.titulo": "Technologies", "tecs.linguagens": "Languages", "tecs.frameworks": "Frameworks / Tools",
         "api.desc": "API (Integrated Project Learning) is a methodology focused on developing hard and soft skills. Its key features are the use of agile methodologies, solving real challenges from partner companies (Real Problem Based Learning), and external validation of projects by those organizations.",
         "proj.titulo": "Projects",
         "filter.todos": "All", "filter.apps": "Applications", "filter.apis": "APIs", "filter.jogos": "Games",

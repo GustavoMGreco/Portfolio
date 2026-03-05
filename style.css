@@ -447,13 +447,13 @@ h3 { font-size: 150%; font-family: "Orbitron", sans-serif; color: var(--text); m
     text-align: center; 
     z-index: 2; 
     transition: transform 0.3s ease, filter 0.3s ease; 
-    width: 150px; 
+    width: 130px; 
 }
 
 .tecs_item > i { 
     font-size: 90px; 
     color: var(--text); 
-    padding: 8px; 
+    padding: 0px; 
 }
 
 @media (min-width: 900px) {
@@ -523,9 +523,9 @@ h3 { font-size: 150%; font-family: "Orbitron", sans-serif; color: var(--text); m
 }
 
 #api, #projetos {
-    margin: 0 0 12%;
+    margin: 0 0 2%;
     max-width: none;
-    padding-top: 90px;
+    padding: 80px 0 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
