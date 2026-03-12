@@ -2,23 +2,24 @@
 const apisData = [
     {
         categoria: "apis",
-        titulo: { pt: "API - AVATAR", en: "API - AVATAR" },
-        img: "imagens/ImagemAVATAR.png",
-        imgAlt: "APIAvatar",
+        titulo: { pt: "API - Mapa de Oportunidade para Crédito Inclusivo", en: "API - Opportunity Map for Inclusive Credit" },
+        img: "imagens/imagemDM.png",
+        imgAlt: "APIDmCard",
+        badge: { pt: "Em Desenvolvimento", en: "In Development" },
         descricao: {
-            pt: "Sistema web para gestão de atestados e avaliação de equipes ágeis.",
-            en: "Web system for managing medical certificates and evaluating agile teams."
+            pt: "Inteligência de crédito em TypeScrypt, Node e React com análise de dados público do Banco Central do Brasil.",
+            en: "Credit intelligence in TypeScript, Node, and React with public data analysis from the Central Bank of Brazil."
         },
         desafio: {
-            pt: "<strong>Desafio:</strong> Implementar autenticação e exportação de documentos sem banco de dados.",
-            en: "<strong>Challenge:</strong> Implement authentication and document export without a database."
+            pt: "<strong>Desafio:</strong> ...",
+            en: "<strong>Challenge:</strong> ..."
         },
-        solucao: {
-            pt: "<strong>Solução:</strong> Utilizei Flask para as rotas, lógica e JSON como estrutura de dados.",
-            en: "<strong>Solution:</strong> Used Flask for routing, logic and JSON as the data structure."
+        solucao: {                                                              // Em desenvolvimento
+            pt: "<strong>Solução:</strong> ...",
+            en: "<strong>Solution:</strong> ..."
         },
-        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-python-plain","devicon-bootstrap-plain","devicon-flask-original","devicon-javascript-plain"],
-        links: { video: "https://www.youtube.com/watch?v=2vUJxWFI6WU", github: "https://github.com/NinjaDevs-API/NinjaDevs" }
+        tecs: ["devicon-html5-plain","devicon-css3-plain", "devicon-javascript-plain" ,"devicon-typescript-plain","devicon-nodejs-plain", "devicon-react-plain", "devicon-mysql-plain"],
+        links: { github: "https://github.com/Galaticos-API/API-3" }
     },
     {
         categoria: "apis",
@@ -39,11 +40,32 @@ const apisData = [
         },
         tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-java-plain","devicon-mysql-plain"],
         links: { video: "https://youtu.be/meaiycU6ehY", github: "https://github.com/Galaticos-API/API-2" }
+    },
+    {
+        categoria: "apis",
+        titulo: { pt: "API - AVATAR", en: "API - AVATAR" },
+        img: "imagens/ImagemAVATAR.png",
+        imgAlt: "APIAvatar",
+        descricao: {
+            pt: "Sistema web para gestão de atestados e avaliação de equipes ágeis.",
+            en: "Web system for managing medical certificates and evaluating agile teams."
+        },
+        desafio: {
+            pt: "<strong>Desafio:</strong> Implementar autenticação e exportação de documentos sem banco de dados.",
+            en: "<strong>Challenge:</strong> Implement authentication and document export without a database."
+        },
+        solucao: {
+            pt: "<strong>Solução:</strong> Utilizei Flask para as rotas, lógica e JSON como estrutura de dados.",
+            en: "<strong>Solution:</strong> Used Flask for routing, logic and JSON as the data structure."
+        },
+        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-python-plain","devicon-bootstrap-plain","devicon-flask-original","devicon-javascript-plain"],
+        links: { video: "https://www.youtube.com/watch?v=2vUJxWFI6WU", github: "https://github.com/NinjaDevs-API/NinjaDevs" }
     }
  ];
 
 const jogosData = [
     {
+        categoria: "jogos",
         titulo: { pt: "Dismissal Escape", en: "Dismissal Escape" },
         categoria: "jogos",
         img: "imagens/imagemDismissal.png",
@@ -68,8 +90,49 @@ const jogosData = [
 
 const projetosData = [
     {
-        titulo: { pt: "Agenda de Contatos", en: "Contacts Manager" },
         categoria: "aplicacoes",
+        titulo: { pt: "Gerador de Narrativas Procedural", en: "Procedural Narrative Generator" },
+        img: "imagens/imagemQuests.png",
+        imgAlt: "Gerador de Narrativas Procedural",
+        badge: { pt: "Em Desenvolvimento", en: "In Development" },
+        descricao: {
+            pt: "API que utiliza algoritmos e lógica de grafos para gerar missões de RPG procedurais.",
+            en: "API that uses graph algorithms and logic to generate procedural RPG quests."
+        },
+        desafio: {
+            pt: "<strong>Desafio:</strong> ...",
+            en: "<strong>Challenge:</strong> ..."
+        },
+        solucao: {
+            pt: "<strong>Solução:</strong> ...",
+            en: "<strong>Solution:</strong> ..."
+        },
+        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-javascript-plain","devicon-typescript-plain","devicon-nodejs-plain", "devicon-react-plain","devicon-postgresql-plain"],
+        links: { github: "https://github.com/GustavoMGreco/Gerador-de-Narrativas-Procedural" }
+    },
+    {
+        categoria: "aplicacoes",
+        titulo: { pt: "Sistema Bancário", en: "Banking System" },
+        img: "imagens/imagemBanco.png",
+        imgAlt: "SistemaBancario",
+        descricao: {
+            pt: "Core bancário e sistema de transações com extrato.",
+            en: "Core Banking and Transaction System with Statement."
+        },
+        desafio: {
+            pt: "<strong>Desafio:</strong> Impedir a exposição de dados sensíveis e da estrutura bruta do banco de dados diretamente na camada de rede (API).",
+            en: "<strong>Challenge:</strong> Preventing the exposure of sensitive data and raw database structures directly to the API network layer."
+        },
+        solucao: {
+            pt: "<strong>Solução:</strong> Implementei o padrão DTO para desacoplar as entidades do banco da interface, assim, apenas dados necessários e formatados trafegam via JSON.",
+            en: "<strong>Solution:</strong> Implemented the DTO pattern to decouple database entities from the UI, ensuring only necessary and formatted data is transferred via JSON."
+        },
+        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-java-plain","devicon-typescript-plain","devicon-react-plain", "devicon-tailwindcss-plain","devicon-postgresql-plain"],
+        links: { video: "https://youtu.be/9DyAC5l8tN8", github: "https://github.com/GustavoMGreco/Sistema-Bancario" }
+    },
+    {
+        categoria: "aplicacoes",
+        titulo: { pt: "Agenda de Contatos", en: "Contacts Manager" },
         img: "imagens/ImagemCRUD.png",
         imgAlt: "AgendadeContatos",
         descricao: {
@@ -86,26 +149,6 @@ const projetosData = [
         },
         tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-python-plain","devicon-bootstrap-plain","devicon-flask-original","devicon-mysql-plain"],
         links: { video: "https://youtu.be/e9jTuC-lV3M", github: "https://github.com/GustavoMGreco/CRUD-Agenda-de-Contatos" }
-    },
-    {
-        titulo: { pt: "Sistema Bancário", en: "Banking System" },
-        categoria: "aplicacoes",
-        img: "imagens/imagemBanco.png",
-        imgAlt: "SistemaBancario",
-        descricao: {
-            pt: "Aplicação web bancária completa com foco em integridade transacional e gestão de ativos.",
-            en: "A full-stack banking application focused on transactional integrity and asset management."
-        },
-        desafio: {
-            pt: "<strong>Desafio:</strong> Impedir a exposição de dados sensíveis e da estrutura bruta do banco de dados diretamente na camada de rede (API).",
-            en: "<strong>Challenge:</strong> Preventing the exposure of sensitive data and raw database structures directly to the API network layer."
-        },
-        solucao: {
-            pt: "<strong>Solução:</strong> Implementei o padrão DTO para desacoplar as entidades do banco da interface, assim, apenas dados necessários e formatados trafegam via JSON.",
-            en: "<strong>Solution:</strong> Implemented the DTO pattern to decouple database entities from the UI, ensuring only necessary and formatted data is transferred via JSON."
-        },
-        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-java-plain","devicon-typescript-plain","devicon-react-plain", "devicon-tailwindcss-plain","devicon-postgresql-plain"],
-        links: { video: "https://youtu.be/9DyAC5l8tN8", github: "https://github.com/GustavoMGreco/Sistema-Bancario" }
     }
 ];
 
