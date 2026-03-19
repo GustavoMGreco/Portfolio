@@ -107,7 +107,7 @@ const projetosData = [
             pt: "<strong>Solução:</strong> ...",
             en: "<strong>Solution:</strong> ..."
         },
-        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-javascript-plain","devicon-typescript-plain","devicon-nodejs-plain", "devicon-react-plain","devicon-postgresql-plain"],
+        tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-typescript-plain","devicon-nodejs-plain","devicon-nestjs-plain","devicon-react-plain","devicon-prisma-plain","devicon-postgresql-plain"],
         links: { github: "https://github.com/GustavoMGreco/Gerador-de-Narrativas-Procedural" }
     },
     {
