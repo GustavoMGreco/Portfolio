@@ -310,7 +310,10 @@ h3 { font-size: 150%; font-family: "Orbitron", sans-serif; color: var(--text); m
 
 .inicio_foto {
     width: 28%;
-    height: 60%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: top;
     margin: 4.6% 10% 0 0;
     border-radius: 5px;
     box-shadow: 0 0 40px var(--accent-glow);
@@ -533,10 +536,12 @@ h3 { font-size: 150%; font-family: "Orbitron", sans-serif; color: var(--text); m
 
 .slideshow-wrapper {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .carousel-row {
@@ -732,6 +737,11 @@ h3 { font-size: 150%; font-family: "Orbitron", sans-serif; color: var(--text); m
 
 
 @media (max-width: 700px) {
+    .cards-grid .carousel-bloco {
+        min-width: 100%;
+        min-height: auto;
+    }
+
     .carousel-bloco { flex-direction: column; }
     .carousel-left { width: 100%; height: 180px; border-right: none; border-bottom: 1px solid rgba(255,49,80,0.2); }
     .carousel-left img { height: 180px; }
@@ -952,7 +962,8 @@ footer > p {
 .cards-grid .carousel-bloco {
     flex-direction: column;
     min-height: 577px;
-    min-width: 440px;
+    min-width: 0px;
+    width: 100%;
 }
 
 .cards-grid .carousel-left {

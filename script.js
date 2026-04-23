@@ -120,11 +120,11 @@ const projetosData = [
             en: "Core Banking and Transaction System with Statement."
         },
         desafio: {
-            pt: "<strong>Desafio:</strong> Impedir a exposição de dados sensíveis e da estrutura bruta do banco de dados diretamente na camada de rede (API).",
+            pt: "<strong>Desafio:</strong> Evitar a exposição de dados sensíveis e da estrutura do banco na API.",
             en: "<strong>Challenge:</strong> Preventing the exposure of sensitive data and raw database structures directly to the API network layer."
         },
         solucao: {
-            pt: "<strong>Solução:</strong> Implementei o padrão DTO para desacoplar as entidades do banco da interface, assim, apenas dados necessários e formatados trafegam via JSON.",
+            pt: "<strong>Solução:</strong> Uso do padrão DTO para desacoplar entidades e garantir que apenas dados necessários trafeguem via JSON.",
             en: "<strong>Solution:</strong> Implemented the DTO pattern to decouple database entities from the UI, ensuring only necessary and formatted data is transferred via JSON."
         },
         tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-java-plain","devicon-typescript-plain","devicon-react-plain", "devicon-tailwindcss-plain","devicon-postgresql-plain"],
