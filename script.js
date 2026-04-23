@@ -121,11 +121,11 @@ const projetosData = [
         },
         desafio: {
             pt: "<strong>Desafio:</strong> Evitar a exposição de dados sensíveis e da estrutura do banco na API.",
-            en: "<strong>Challenge:</strong> Preventing the exposure of sensitive data and raw database structures directly to the API network layer."
+            en: "<strong>Challenge:</strong> Prevent the exposure of sensitive data and database structure in the API."
         },
         solucao: {
             pt: "<strong>Solução:</strong> Uso do padrão DTO para desacoplar entidades e garantir que apenas dados necessários trafeguem via JSON.",
-            en: "<strong>Solution:</strong> Implemented the DTO pattern to decouple database entities from the UI, ensuring only necessary and formatted data is transferred via JSON."
+            en: "<strong>Solution:</strong> Used the DTO pattern to decouple entities and ensure only necessary data is transferred via JSON."
         },
         tecs: ["devicon-html5-plain","devicon-css3-plain","devicon-java-plain","devicon-typescript-plain","devicon-react-plain", "devicon-tailwindcss-plain","devicon-postgresql-plain"],
         links: { video: "https://youtu.be/9DyAC5l8tN8", github: "https://github.com/GustavoMGreco/Sistema-Bancario" }
